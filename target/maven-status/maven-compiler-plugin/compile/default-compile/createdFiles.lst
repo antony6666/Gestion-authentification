@@ -1,0 +1,13 @@
+com/example/securingweb/AuthenticationEvents.class
+com/example/securingweb/WebSecurityConfig.class
+com/example/securingweb/MyErrorController.class
+com/example/securingweb/Connexion.class
+com/example/securingweb/MySimpleUrlAuthenticationSuccessHandler.class
+com/example/securingweb/UsernamePassword.class
+com/example/securingweb/UserLogginsRepository.class
+com/example/securingweb/userloggins.class
+com/example/securingweb/MvcConfig.class
+com/example/securingweb/UserProperties.class
+com/example/securingweb/WebAppController.class
+com/example/securingweb/SecuringWebCompletApplication.class
+com/example/securingweb/UserConnexionRepository.class

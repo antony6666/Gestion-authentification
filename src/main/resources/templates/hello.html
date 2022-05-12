@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Hello World!</title>
+    </head>
+    <body>
+        <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+        
+        <p> Modifie tes données </p>
+         <form th:action="@{/modif}" method="post">
+            <input type="submit" value="modif password" class="modif"/>
+        </form>
+          <form th:action="@{/logs}" method="get">
+            <input type="submit" value="logs" class="log"/>
+        </form>
+        
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Déconnexion" class="deco"/>
+        </form>
+        
+        <style>
+        
+      .log{
+       background-color: #9370db;
+        border: solid;
+        color: white;
+        padding: 18px 85px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 21px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 7px;
+      
+      }
+       .deco{
+       background-color:#f50000;
+       border: solid;
+        color: white;
+        padding: 18px 42px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 21px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 7px;
+       
+       }
+       
+       .modif{
+       background-color:#32cd26;
+       border: solid;
+        color: white;
+        padding: 18px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 21px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 7px;
+       
+       }
+       </style>
+       
+    </body>
+</html>
